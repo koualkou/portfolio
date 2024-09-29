@@ -1,0 +1,363 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    background: #000;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 70px;
+    color: #1BFF07;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 71.5px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 35px;
+    line-height: 45.5px;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+div {
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 33px 0 94px 0;
+    height: 765px;
+    width: 100%;
+    background-image: url(../resources/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.header__wrapper {
+    margin-bottom: 263px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* .logo {
+    width: 130px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: #000;
+} */
+
+.logo {
+    width: 130px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../resources/logo-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+}
+
+.logo__text {
+    height: 55px;
+    width: 109px;
+    text-transform: uppercase;
+    font-size: 42.41px;
+    font-weight: 700;
+    line-height: 55.14px;
+    letter-spacing: -0.11em;
+    color: #1BFF07;
+}
+
+.nav__lists {
+    display: flex;
+}
+
+.nav__list {
+    margin-right: 50px;
+}
+
+.nav__list:last-child {
+    margin-right: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    color: white;
+}
+
+.nav__link_active:hover {
+    color: #1BFF07;
+}
+
+.header__content-text {
+    margin-bottom: 29px;
+    max-width: 430px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: white;
+}
+
+.header__content-title {
+    max-width: 919px;
+
+}
+/* Header */
+
+.projects {
+    padding: 150px 0;
+}
+
+.projects__title {
+    margin-bottom: 40px;
+}
+
+.projects__list {
+    position: relative;
+    max-height: 550px;
+}
+
+.projects__list:last-child {
+    margin-bottom: 80px;
+}
+
+.projects__img {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: 50% 50%;
+    border-radius: 30px;
+}
+
+.projects__list-title {
+    left: 50px;
+    bottom: 94px;
+    position: absolute;
+}
+.projects__list-text {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.projects__btn {
+    padding: 56px 118px;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 39px;
+    background: #1BFF07;
+    border: 1px solid #1BFF07;
+    border-radius: 10px;
+}
+
+.projects__btn_hover:hover {
+    background: none;
+    border: 1px solid #1BFF07;
+    color: #1BFF07;
+}
+/* Projects */
+
+.competencies {
+    padding-bottom: 155px;
+}
+
+.competencies__title {
+    margin-bottom: 48px;
+}
+
+.competencies__list {
+    margin-bottom: 60px;
+}
+
+.competencies__list:last-child {
+    margin-bottom: 0;
+}
+
+.competencies__list-item {
+    width: 45px;
+    height: 44px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1BFF07;
+    border-radius: 10px;
+}
+
+.competencies__list-img {
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.competencies__list-title {
+    margin-bottom: 16px;
+    color: #1BFF07;
+}
+.competencies__list-text {
+    max-width: 778px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28.6px;
+}
+/* Competencies */
+
+.tasks {
+    padding-bottom: 150px;
+}
+
+.tasks__title {
+    max-width: 403px;
+    margin-bottom: 74px;
+    font-size: 35px;
+    line-height: 45.5px;
+}
+
+.tasks__list {
+    margin-bottom: 74px;
+}
+
+.tasks__list:last-child{
+    margin-bottom: 0;
+}
+
+.tasks__list:nth-last-child(2) {
+    margin-bottom: 137px;
+}
+
+.tasks__list-img {
+    height: 200px;
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+    object-fit: cover;
+}
+
+.tasks__wrapper {
+    padding: 40px 0 0 40px;
+    height: 283px;
+    border-radius: 30px;
+    background: #191C19;
+}
+
+.tasks__wrapper-title {
+    margin-bottom: 15px;
+    font-size: 55px;
+    line-height: 71.5px;
+    color: #1BFF07;
+}
+
+.tasks__wrapper-text {
+    max-width: 749px;
+    font-size: 22px;
+    line-height: 28.6px;
+    color: #fff;
+}
+/* Tasks */
+
+.contacts {
+    position: relative;
+    height: 717px;
+    max-width: 100%;
+    margin-bottom: 150px;
+    background-image: url(../resources/contacts-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 30px;
+}
+
+.contacts__title {
+    position: absolute;
+    top: 320px;
+    font-size: 35px;
+    line-height: 60px;
+}
+
+.contacts__lists {
+    bottom: 89px;
+    position: absolute;
+    font-size: 60px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.contacts__list {
+    margin-bottom: 20px;
+}
+
+.contacts__list:last-child {
+    margin-bottom: 0;
+}
+
+.contacts__list_hover:hover {
+    color: #1BFF07;
+}
+/* Contacts */
+
+.footer {
+    font-family: "Manrope", sans-serif;
+    padding: 76px 0 90px 0;
+    background: #fff;
+    border-radius: 30px 30px 0 0;
+}
+
+.footer p {
+    color: #000;
+}
+
+.footer__text {
+    font-weight: 400;
+    margin-bottom: 66px;
+    font-size: 22px;
+    line-height: 30.05px;
+}
+
+.footer__text-rights {
+    font-size: 20px;
+    line-height: 27.32px;
+    opacity: 50%;
+    font-weight: 400;
+}
+/* Footer */
