@@ -68,7 +68,7 @@ a {
     align-items: flex-start;
 }
 
-/* .logo {
+.logo {
     width: 130px;
     height: 39px;
     display: flex;
@@ -76,19 +76,6 @@ a {
     align-items: center;
     border-radius: 100px;
     background: #000;
-} */
-
-.logo {
-    width: 130px;
-    height: 39px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../resources/logo-background.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    
 }
 
 .logo__text {
@@ -150,32 +137,36 @@ a {
 }
 
 .projects__list {
+    height: 550px;
+}
+
+.projects__link {
     position: relative;
-    max-height: 550px;
 }
 
 .projects__list:last-child {
     margin-bottom: 80px;
 }
 
-.projects__img {
-    height: 550px;
+.projects__link-img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
     object-position: 50% 50%;
     border-radius: 30px;
 }
 
-.projects__list-title {
-    left: 50px;
-    bottom: 94px;
-    position: absolute;
-}
-.projects__list-text {
+.projects__link-wrapper {
     position: absolute;
     left: 50px;
     bottom: 50px;
+}
+
+.projects__link-title {
+    margin-bottom: 5px;
+}
+.projects__link-text {
     font-size: 30px;
     font-weight: 400;
     line-height: 39px;
@@ -266,8 +257,12 @@ a {
     margin-bottom: 137px;
 }
 
-.tasks__list-img {
+.tasks__list-wrapper {
     height: 200px;
+}
+
+.tasks__list-img {
+    height: 100%;
     width: 100%;
     border-radius: 30px;
     display: block;
@@ -275,8 +270,7 @@ a {
 }
 
 .tasks__wrapper {
-    padding: 40px 0 0 40px;
-    height: 283px;
+    padding: 40px 0 40px 40px;
     border-radius: 30px;
     background: #191C19;
 }
