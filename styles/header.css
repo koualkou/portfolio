@@ -1,0 +1,104 @@
+.header {
+  position: relative;
+  padding-top: 36px;
+  height: 765px;
+  width: 100%;
+  background-image: url(../resources/header/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  background: #000;
+}
+
+.header__nav-list {
+  display: flex;
+  column-gap: 50px;
+}
+
+.header__nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: white;
+}
+
+.header__nav-link:hover {
+  color: #1bff07;
+}
+
+.header__nav-link_active {
+  color: #1bff07;
+}
+
+.header__intro-text {
+  position: absolute;
+  bottom: 328px;
+  max-width: 430px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.header__intro-title {
+  position: absolute;
+  bottom: 94px;
+  max-width: 919px;
+  font-size: 80px;
+  line-height: 70px;
+  color: #1bff07;
+}
+
+@media (max-width: 1199px) {
+  .header {
+    padding-top: 32px;
+    background-image: url(../resources/header/background-tablet.jpg);
+  }
+
+  .header__wrapper {
+    align-items: center;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__intro-text {
+    bottom: 294px;
+  }
+
+  .header__intro-title {
+    bottom: 60px;
+    max-width: 727px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 716px;
+    background-image: url(../resources/header/background-phone.jpg);
+  }
+
+  .header__intro-text {
+    bottom: 279px;
+    max-width: 310px;
+    font-size: 15px;
+    line-height: 19.5px;
+  }
+
+  .header__intro-title {
+    bottom: 75px;
+    max-width: 353px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
