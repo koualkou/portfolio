@@ -1,227 +1,462 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <a class="logo" href="#">
-                    <p class="logo__text">orlov</p>
-                </a>
-                <nav class="nav">
-                    <ul class="nav__lists">
-                        <li class="nav__list">
-                            <a href="#projects" class="nav__link nav__link_active">портфолио</a>
-                        </li>
-                        <li class="nav__list">
-                            <a href="#competencies" class="nav__link nav__link_active">компетенции</a>
-                        </li>
-                        <li class="nav__list">
-                            <a href="#tasks" class="nav__link nav__link_active">услуги</a>
-                        </li>
-                        <li class="nav__list">
-                            <a href="#contacts" class="nav__link nav__link_active">контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__content">
-                <p class="header__content-text">
-                    Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и
-                    позволяют выделиться на фоне конкурентов
-                </p>
-                <h1 class="header__content-title">
-                    Привет, я Саша — фронтенд разарботчик и дизайнер сайтов
-                </h1>
-            </div>
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo logo" href="#">
+            <span class="header__logo-text logo__text">orlov</span>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a
+                  class="header__nav-link header__nav-link_active"
+                  href="#projects"
+                  >портфолио</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#competencies">компетенции</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#tasks">услуги</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#contacts">контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="js-burger-btn burger__btn">
+            <div class="burger__btn-img"></div>
+          </button>
         </div>
+        <div class="header__intro">
+          <p class="header__intro-text">
+            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
+            повышают престиж компании и позволяют выделиться на фоне конкурентов
+          </p>
+          <h1 class="header__intro-title">
+            Привет, я Саша — фронтенд разарботчик и дизайнер сайтов
+          </h1>
+        </div>
+        <div class="js-burger burger">
+          <div class="burger__content">
+            <a class="burger__logo logo" href="#">
+              <span class="burger__logo-text logo__text">orlov</span>
+            </a>
+            <nav class="burger__nav">
+              <ul class="burger__nav-list">
+                <li class="burger__nav-item">
+                  <a class="burger__nav-link" href="#projects">портфолио</a>
+                </li>
+                <li class="burger__nav-item">
+                  <a class="burger__nav-link" href="#competencies"
+                    >компетенции</a
+                  >
+                </li>
+                <li class="burger__nav-item">
+                  <a class="burger__nav-link" href="#tasks">услуги</a>
+                </li>
+                <li class="burger__nav-item">
+                  <a class="burger__nav-link" href="#contacts">контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <h2 class="burger__contacts-title">для связи:</h2>
+            <ul class="js-burger__content burger__contacts-list">
+              <li class="burger__contacts-item">
+                <a
+                  class="burger__contacts-link_instagram"
+                  href="https://instagram.com/kou_al_kou"
+                  target="_blank"
+                  >instagram</a
+                >
+              </li>
+              <li class="burger__contacts-item">
+                <a
+                  class="burger__contacts-link_telegram"
+                  href="https://t.me/koaulkou"
+                  target="_blank"
+                  >telegram</a
+                >
+              </li>
+              <li class="burger__contacts-item">
+                <a
+                  class="burger__contacts-link_mail"
+                  href="mailto:koualkou@mail.ru"
+                  >mail</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
-    <!-- Header -->
     <main>
-        <section class="projects" id="projects">
-            <div class="container">
-                <h2 class="projects__title">Самые свежие проекты</h2>
-                <ul class="projects__lists">
-                    <li class="projects__list">
-                        <a href="#" class="projects__link">
-                            <img class="projects__link-img" src="resources/1.jpg" alt="сайт Realhome">
-                            <div class="projects__link-wrapper">
-                                <h3 class="projects__link-title">Realhome</h3>
-                                <p class="projects__link-text">дизайн,верстка, настройка</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="projects__list">
-                        <a href="#" class="projects__link">
-                            <img class="projects__link-img" src="resources/2.jpg" alt="сайт GLASS">
-                            <div class="projects__link-wrapper">
-                                <h3 class="projects__link-title">GLASS</h3>
-                                <p class="projects__link-text">разработка интерфейса</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="projects__list">
-                        <a href="#" class="projects__link">
-                            <img class="projects__link-img" src="resources/3.jpg" alt="сайт Fesiyen">
-                            <div class="projects__link-wrapper">
-                                <h3 class="projects__link-title">Fesiyen</h3>
-                                <p class="projects__link-text">разработка интерфейса</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <a class="projects__btn projects__btn_hover" href="#">Смотреть все проекты</a>
-            </div>
-        </section>
-        <!-- Projects -->
+      <section class="projects">
+        <div class="container">
+          <h2 class="projects__title" id="projects">Самые свежие проекты</h2>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <a
+                class="projects__link"
+                href="https://koualkou.github.io/metric/"
+                target="_blank"
+              >
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="resources/projects/metric-phone.jpg"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/projects/metric-tablet.jpg"
+                  />
+                  <img
+                    class="projects__link-img"
+                    src="resources/projects/metric.jpg"
+                    alt="сайт Realhome"
+                  />
+                </picture>
+                <span class="projects__link-label">дизайн интерьера</span>
+                <h3 class="projects__link-title">Метрика</h3>
+                <p class="projects__link-text">верстка, настройка</p>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a
+                class="projects__link"
+                href="https://koualkou.github.io/metric/"
+                target="_blank"
+              >
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="resources/projects/nothing-phone.jpg"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/projects/nothing-tablet.jpg"
+                  />
+                  <img
+                    class="projects__link-img"
+                    src="resources/projects/nothing.jpg"
+                    alt="сайт Realhome"
+                  />
+                </picture>
+                <span class="projects__link-label">презентация продукта</span>
+                <h3 class="projects__link-title">Nothing</h3>
+                <p class="projects__link-text">верстка, настройка</p>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a
+                class="projects__link"
+                href="https://koualkou.github.io/metric/"
+                target="_blank"
+              >
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="resources/projects/toptrip-phone.jpg"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/projects/toptrip-tablet.jpg"
+                  />
+                  <img
+                    class="projects__link-img"
+                    src="resources/projects/toptrip.jpg"
+                    alt="сайт Realhome"
+                  />
+                </picture>
+                <span class="projects__link-label">заказ путешествий</span>
+                <h3 class="projects__link-title">TOPTRIP</h3>
+                <p class="projects__link-text">верстка</p>
+              </a>
+            </li>
+          </ul>
+          <a
+            class="projects__btn projects__btn_hover"
+            href="https://koualkou.github.io/metric/"
+            target="_blank"
+            >Смотреть все проекты</a
+          >
+        </div>
+      </section>
 
-        <section class="competencies" id="competencies">
-            <div class="container">
-                <h2 class="competencies__title">Мои компетенции</h2>
-                <ul class="competencies__lists">
-                    <li class="competencies__list">
-                        <div class="competencies__list-item">
-                            <img class="competencies__list-img" src="resources/item-1.svg" alt="">
-                        </div>
-                        <h3 class="competencies__list-title">HTML и CSS</h3>
-                        <p class="competencies__list-text">
-                            это основа фронтенд разработки. Умение создавать и правильно
-                            структурировать HTML-документы, а также применять стили к этим документам на CSS, является
-                            обязательным навыком для каждого фронтенд разработчика.
-                        </p>
-                    </li>
-                    <li class="competencies__list">
-                        <div class="competencies__list-item">
-                            <img class="competencies__list-img" src="resources/item-2.svg" alt="">
-                        </div>
-                        <h3 class="competencies__list-title">JavaScript</h3>
-                        <p class="competencies__list-text">
-                            это язык программирования, который используется для создания
-                            динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик
-                            должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными
-                            запросами и манипуляцией данными на стороне клиента.
-                        </p>
-                    </li>
-                    <li class="competencies__list">
-                        <div class="competencies__list-item">
-                            <img class="competencies__list-img" src="resources/item-3.svg" alt="">
-                        </div>
-                        <h3 class="competencies__list-title">Работа с библиотеками и фреймворками</h3>
-                        <p class="competencies__list-text">
-                            фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими
-                            как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под
-                            нужды проекта и расширять их функциональность, является очень важным навыком.
-                        </p>
-                    </li>
-                    <li class="competencies__list">
-                        <div class="competencies__list-item">
-                            <img class="competencies__list-img" src="resources/item-4.svg" alt="">
-                        </div>
-                        <h3 class="competencies__list-title">Разработка для мобильных <br> устройств и адаптивная
-                            верстка
-                        </h3>
-                        <p class="competencies__list-text">
-                            фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими
-                            как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под
-                            нужды проекта и расширять их функциональность, является очень важным навыком.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Competencies -->
+      <section class="competencies" id="competencies">
+        <div class="container">
+          <h2 class="competencies__title">Мои компетенции</h2>
+          <ul class="competencies__list">
+            <li class="competencies__item">
+              <div class="competencies__wrapper">
+                <img
+                  class="competencies__img"
+                  src="resources/item-1.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="competencies__item-title">HTML и CSS</h3>
+              <p class="competencies__item-text">
+                это основа фронтенд разработки. Умение создавать и правильно
+                структурировать HTML-документы, а также применять стили к этим
+                документам на CSS, является обязательным навыком для каждого
+                фронтенд разработчика.
+              </p>
+            </li>
+            <li class="competencies__item">
+              <div class="competencies__wrapper">
+                <img
+                  class="competencies__img"
+                  src="resources/item-2.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="competencies__item-title">JavaScript</h3>
+              <p class="competencies__item-text">
+                это язык программирования, который используется для создания
+                динамического и интерактивного пользовательского интерфейса.
+                Хороший фронтенд разработчик должен быть знаком с основами
+                JavaScript, включая работу с DOM-деревом, асинхронными запросами
+                и манипуляцией данными на стороне клиента.
+              </p>
+            </li>
+            <li class="competencies__item">
+              <div class="competencies__wrapper">
+                <img
+                  class="competencies__img"
+                  src="resources/item-3.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="competencies__item-title">
+                Работа с библиотеками и фреймворками
+              </h3>
+              <p class="competencies__item-text">
+                фронтенд разработчики должны быть знакомы с различными
+                библиотеками и фреймворками, такими как React, Angular, Vue и
+                другими. Умение использовать готовые решения, адаптировать их
+                под нужды проекта и расширять их функциональность, является
+                очень важным навыком.
+              </p>
+            </li>
+            <li class="competencies__item">
+              <div class="competencies__wrapper">
+                <img
+                  class="competencies__img"
+                  src="resources/item-4.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="competencies__item-title">
+                Разработка для мобильных <br />
+                устройств и адаптивная верстка
+              </h3>
+              <p class="competencies__item-text">
+                фронтенд разработчики должны быть знакомы с различными
+                библиотеками и фреймворками, такими как React, Angular, Vue и
+                другими. Умение использовать готовые решения, адаптировать их
+                под нужды проекта и расширять их функциональность, является
+                очень важным навыком.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <section class="tasks" id="tasks">
-            <div class="container">
-                <h2 class="tasks__title">Помогаю реализовать широкий спектр задач</h2>
-                <ul class="tasks__lists">
-                    <li class="tasks__list">
-                        <div class="tasks__list-wrapper">
-                            <img class="tasks__list-img" src="resources/tasks-1.jpg" alt="элементы страницы">
-                        </div>
-                        <div class="tasks__wrapper">
-                            <h3 class="tasks__wrapper-title">Разработка сайта под ключ</h3>
-                            <p class="tasks__wrapper-text">
-                                Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения
-                                бизнес-задач <br>
-                                Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь
-                                совершит целевое действие
-                            </p>
-                        </div>
-                    </li>
-                    <li class="tasks__list">
-                        <div class="tasks__list-wrapper">
-                            <img class="tasks__list-img" src="resources/tasks-2.jpg" alt="стильный дизайн сайта">
-                        </div>
-                        <div class="tasks__wrapper">
-                            <h3 class="tasks__wrapper-title">Верстка сайтов</h3>
-                            <p class="tasks__wrapper-text">
-                                Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд
-                                разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта
-                            </p>
-                        </div>
-                    </li>
-                    <li class="tasks__list">
-                        <div class="tasks__list-wrapper">
-                            <img class="tasks__list-img" src="resources/tasks-3.jpg" alt="мобильный интерфейс">
-                        </div>
-                        <div class="tasks__wrapper">
-                            <h3 class="tasks__wrapper-title">Разработка мобильного интерфейса</h3>
-                            <p class="tasks__wrapper-text">
-                                Это процесс создания интерактивных элементов на странице <br> с помощью JavaScript.
-                                Фронтенд
-                                разработчик может помочь создать динамический и удобный пользовательский интерфейс для
-                                вашего сайта или приложения.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Tasks -->
+      <section class="tasks" id="tasks">
+        <div class="container">
+          <h2 class="tasks__title">Помогаю реализовать широкий спектр задач</h2>
+          <ul class="tasks__list">
+            <li class="tasks__item">
+              <div class="tasks__item-media">
+                <picture>
+                  <source
+                    media="(max-width: 700px)"
+                    srcset="resources/tasks/development-phone.jpg"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/tasks/development-tablet.jpg"
+                  />
+                  <img
+                    class="tasks__item-img"
+                    src="resources/tasks/development.jpg"
+                    alt="элементы страницы"
+                  />
+                </picture>
+              </div>
+              <div class="tasks__item-content">
+                <h3 class="tasks__item-title">Разработка сайта под ключ</h3>
+                <p class="tasks__item-description">
+                  Это создание дизайн веб-сайтов, созданный для удобства
+                  пользователя и решения бизнес-задач <br />
+                  Сайты должны быть понятными и удобными, ведь чем понятнее
+                  сайт, тем быстрее пользователь совершит целевое действие
+                </p>
+              </div>
+            </li>
+            <li class="tasks__item">
+              <div class="tasks__item-media">
+                <picture>
+                  <source
+                    media="(max-width: 700px)"
+                    srcset="resources/tasks/layout-phone.jpg"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/tasks/layout-tablet.jpg"
+                  />
+                  <img
+                    class="tasks__item-img"
+                    src="resources/tasks/layout.jpg"
+                    alt="элементы страницы"
+                  />
+                </picture>
+              </div>
+              <div class="tasks__item-content">
+                <h3 class="tasks__item-title">Верстка сайтов</h3>
+                <p class="tasks__item-description">
+                  Это процесс создания HTML-документов и применения к ним стилей
+                  на CSS. Фронтенд разработчик может помочь создать
+                  привлекательный и удобный интерфейс для вашего сайта
+                </p>
+              </div>
+            </li>
+            <li class="tasks__item">
+              <div class="tasks__item-media">
+                <picture>
+                  <source
+                    media="(max-width: 700px)"
+                    srcset="resources/tasks/mobile-phone.jpg"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/tasks/mobile-tablet.jpg"
+                  />
+                  <img
+                    class="tasks__item-img"
+                    src="resources/tasks/mobile.jpg"
+                    alt="элементы страницы"
+                  />
+                </picture>
+              </div>
+              <div class="tasks__item-content">
+                <h3 class="tasks__item-title">
+                  Разработка мобильного интерфейса
+                </h3>
+                <p class="tasks__item-description">
+                  Это процесс создания интерактивных элементов на странице с
+                  помощью JavaScript. Фронтенд разработчик может помочь создать
+                  динамический и удобный пользовательский интерфейс для вашего
+                  сайта или приложения.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <section class="contacts" id="contacts">
-            <div class="container">
-                <h2 class="contacts__title">для связи:</h2>
-                <ul class="contacts__lists">
-                    <li class="contacts__list">
-                        <a class="contacts__list-instagram contacts__list_hover" href="https://instagram.com/kou_al_kou"
-                            target="_blank">instagram</a>
-                    </li>
-                    <li class="contacts__list">
-                        <a class="contacts__list-telegram contacts__list_hover" href="https://t.me/koaulkou"
-                            target="_blank">telegram</a>
-                    </li>
-                    <li class="contacts__list">
-                        <a class="contacts__list-mail contacts__list_hover" href="mailto:koualkou@mail.ru">mail</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Contacts -->
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title">
+            Для связи со мной заполните простую форму
+          </h2>
+          <form action="" class="contacts__form">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <input
+                  class="contacts__input"
+                  type="text"
+                  href=""
+                  placeholder="Имя Фамилия"
+                  name="name"
+                />
+              </li>
+              <li class="contacts__item">
+                <input
+                  class="contacts__input"
+                  type="text"
+                  href="mailto:example@mail.ru"
+                  placeholder="example@mail.ru"
+                  name="mail"
+                />
+              </li>
+            </ul>
+            <button class="contacts__btn">Отправить</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <!-- Main -->
 
     <footer class="footer">
-        <div class="container">
-            <p class="footer__text">Портфолио фротнтенд-разработчика Саши Орлова</p>
-            <p class="footer__text-rights">Все права защищены. 2023</p>
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__content">
+            <p class="footer__text">
+              Портфолио фротнтенд-разработчика Саши Орлова
+            </p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  class="footer__link"
+                  href="mailto:koualkou@mail.ru"
+                  target="_blank"
+                  >mail</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  class="footer__link"
+                  href="https://t.me/koualkou"
+                  target="_blank"
+                  >telegram</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  class="footer__link"
+                  href="https://instagram.com/kou_al_kou"
+                  target="_blank"
+                  >instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <p class="footer__copyright">Все права защищены. 2023</p>
+            <p class="footer__policy">
+              <a href="" class="footer__policy-link"
+                >политика обработки данных</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
-    <!-- Footer -->
-</body>
 
+    <script src="burger.js"></script>
+  </body>
 </html>
